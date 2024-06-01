@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost:3000; script-src 'self' http://localhost:3000; style-src 'self' http://localhost:3000; img-src 'self' http://localhost:3000; connect-src 'self' http://localhost:3000;" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
